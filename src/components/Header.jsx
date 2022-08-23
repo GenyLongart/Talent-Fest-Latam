@@ -1,7 +1,14 @@
 import React from 'react'
+
+import { useProductsContext } from '../contexts/productsContext'
+
+
 // import { IconName } from "react-icons/vsc";
 
+
 export const Header = () => {
+    const { product, setProduct } = useProductsContext();
+   console.log(product);
     return (
         <>
             <nav className="relative flex flex-wrap items-center justify-between px-2 py-1 bg-orange-500 mb-3">

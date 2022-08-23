@@ -1,19 +1,17 @@
-import { useState } from 'react'
-import { ProductProvider } from './context/productContext'
-import { RegionDistrictProvider } from './context/regionComunaContext'
+import { useState, useContext } from 'react'
+import { ProductsProvider } from './contexts/productsContext';
+// import  RegionDistrictContext  from './contexts/regionDistrictProvider'
 import { Header } from './components/Header'
-
+import { useProductsContext } from './contexts/productsContext';
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <Header />
-      <h2>HOLA TALENT FEST</h2>
-      <RegionDistrictProvider />
-
-    </div>
-
+    <ProductsProvider>
+      <div className="App">
+        <Header />
+        <h2>HOLA TALENT FEST</h2>
+      </div>
+    </ProductsProvider>
   )
 }
 
