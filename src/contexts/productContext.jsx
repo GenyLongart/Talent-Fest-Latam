@@ -2,9 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import axios from "axios";
 
 
-function createProductContext() {
-  const [product, setProduct] = useState({});
-
+function getDefaultValue() {
   const productsData = async () => {
     const productOne =
       "https://raw.githubusercontent.com/ivanmirson/hackathon-laboratoria/main/buybox/data-buybox1.json";
@@ -14,18 +12,12 @@ function createProductContext() {
       "https://raw.githubusercontent.com/ivanmirson/hackathon-laboratoria/main/buybox/data-buybox3.json";
     const positions = [productOne, productTwo, productThree];
     const randomPosition = Math.floor(Math.random() * (2 + 1));
-    const data = await axios.get(positions[randomPosition]);
-
-    // console.log(data)
-    setProduct(data);
+    return axios.get(positions[randomPosition]);
   };
 
-  useEffect(() => {
-    productsData();
-  }, []);
-  return { product, setProduct, productsData };
+  return { productsData };
 }
 
-const ProductContext = createContext(createProductContext());//Le damos un valor inicial a contexto eb este caso es el objeto que devuelve la funcion createProductContext
+const ProductContext = createContext();//Le damos un valor inicial a contexto eb este caso es el objeto que devuelve la funcion createProductContext
 
-export default ProductContext;
+export { ProductContext, getDefaultValue };
