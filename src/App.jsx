@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { ProductProvider } from './context/productContext'
-import { RegionComunaProvider } from './context/regionComunaContext'
+import { RegionDistrictProvider } from './context/regionComunaContext'
 import { Header } from './components/Header'
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Header />
       <h2>HOLA TALENT FEST</h2>
-      <RegionComunaProvider />
+      <RegionDistrictProvider />
 
     </div>
 
