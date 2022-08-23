@@ -13,7 +13,7 @@ export const Header = () => {
                             </button>
                     </div>
                     <div className="relative flex w-full sm:w-7/12 md:w-5/12 px-4 flex-wrap items-stretch lg:ml-auto">
-                        <input type="text" className="bg-white px-2 py-1 h-8 border border-solid text-sm leading-snug text-[#6C7883] shadow-none outline-none focus:outline-none w-full font-normal rounded-full flex-1 border-l-0 placeholder-[#6C7883]" placeholder="Buscar en falabella.com" />
+                        <input type="text" className="px-2 py-1 h-8 border border-solid  border-orange-600 rounded-full text-sm leading-snug text-orange-700 bg-orange-100 shadow-none outline-none focus:outline-none w-full font-normal rounded-full flex-1 border-l-0 placeholder-orange-300" placeholder="Buscar en falabella.com" />
                     </div>
                     <div className="lg:flex flex-grow items-right" id="example-navbar-warning">
                         <ul className="flex flex-col lg:flex-row list-none mr-auto">
