@@ -1,15 +1,10 @@
 import React from 'react'
 
 
-import { useProductsContext } from '../contexts/productsContext'
-
-
 import { AiOutlineShoppingCart } from "react-icons/ai";
 
 
 export const Header = () => {
-    const { product, setProduct } = useProductsContext();
-    console.log(product);
 
     return (
         <>
