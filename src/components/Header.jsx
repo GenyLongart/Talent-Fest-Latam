@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 import { useProductsContext } from '../contexts/productsContext'
 
 
@@ -9,6 +10,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 export const Header = () => {
     const { product, setProduct } = useProductsContext();
     console.log(product);
+
     return (
         <>
             <nav className="h-[70px] w-fit relative flex flex-wrap items-center pr-2 pl-0 py-0 bg-[#EE5601] mb-3">
