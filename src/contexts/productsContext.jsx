@@ -1,11 +1,11 @@
-import { createContext, useEffect, useState } from "react";
+import React, { useContext, useState, useEffect, createContext } from "react";
 import axios from "axios";
 
+const ProductsContext = createContext();
 
-function createProductContext() {
+export function ProductsProvider({ children }) {
   const [product, setProduct] = useState({});
-
-  const productsData = async () => {
+  const fetchData = async () => {
     const productOne =
       "https://raw.githubusercontent.com/ivanmirson/hackathon-laboratoria/main/buybox/data-buybox1.json";
     const productTwo =
@@ -21,11 +21,25 @@ function createProductContext() {
   };
 
   useEffect(() => {
-    productsData();
+    fetchData();
   }, []);
-  return { product, setProduct, productsData };
+
+  return (
+    <ProductsContext.Provider
+      value={
+        { product, setProduct, productsData: fetchData }
+      }>
+      
+      {children}
+
+    </ProductsContext.Provider>
+  );
 }
 
-const ProductContext = createContext(createProductContext());//Le damos un valor inicial a contexto eb este caso es el objeto que devuelve la funcion createProductContext
-
-export default ProductContext;
+export function useProductsContext() {
+  const context = useContext(ProductsContext);
+  if (context === undefined) {
+    throw new Error("Context must be used within a Provider");
+  }
+  return context;
+}

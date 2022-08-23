@@ -1,19 +1,17 @@
 import { useState, useContext } from 'react'
-import productContext from "./contexts/productProvider";
+import { ProductsProvider } from './contexts/productsContext';
 // import  RegionDistrictContext  from './contexts/regionDistrictProvider'
 import { Header } from './components/Header'
-
+import { useProductsContext } from './contexts/productsContext';
 function App() {
-  const [count, setCount] = useState(0)
-  const context= useContext(productContext);
 
   return (
-    <productContext>
-    <div className="App">
-      <Header />
-      <h2>HOLA TALENT FEST</h2>
-    </div>
-    </productContext>
+    <ProductsProvider>
+      <div className="App">
+        <Header />
+        <h2>HOLA TALENT FEST</h2>
+      </div>
+    </ProductsProvider>
   )
 }
 
