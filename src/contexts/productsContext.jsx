@@ -2,8 +2,7 @@ import React, { useContext, useState, useEffect, createContext } from "react";
 import axios from "axios";
 
 const ProductsContext = createContext();
-
-export function ProductsProvider({ children }) {
+function ProductsProvider({ children }) {
   const [product, setProduct] = useState({});
   const fetchData = async () => {
     const productOne =
