@@ -3,6 +3,7 @@ import {ProductContext} from '../contexts/productContext';
 import {ProductImage} from './ProductImage.jsx';
 import { HelpInfo } from './HelpInfo';
 import Modal from '../modal/Modal';
+import {ProductActions} from './ProductActions'
 
 export const ProductContainer = () => {
     const context = useContext(ProductContext);
