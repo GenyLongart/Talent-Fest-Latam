@@ -1,10 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react';
-import {ProductContext} from '../contexts/productContext';
-import {ProductImage} from './ProductImage.jsx';
+import { ProductContext } from '../contexts/productContext';
+import { ProductImage } from './ProductImage.jsx';
 import { HelpInfo } from './HelpInfo';
 import Modal from '../modal/Modal';
-import {ProductActions} from './ProductActions';
-import {ProductData} from './ProductData';
+import { ProductActions } from './ProductActions';
+import { ProductData } from './ProductData';
+import { ProductPrice } from './ProductPrice';
 
 export const ProductContainer = () => {
     const context = useContext(ProductContext);
@@ -33,6 +34,5 @@ export const ProductContainer = () => {
                 <Modal />
             </div> 
         </div>
-    </div>
-)  
+    )
 }

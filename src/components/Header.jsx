@@ -8,7 +8,7 @@ export const Header = () => {
 
     return (
         <div>
-            <nav className="w-screen static flex flex-wrap items-center pr-0 pl-0 py-0  mb-0">
+            <nav className=" font-Lato w-screen static flex flex-wrap items-center pr-0 pl-0 py-0  mb-0">
                 <div className="w-full h-[70px] pr-2 pl-0 mx-auto flex flex-wrap items-center justify-right ml-0 bg-[#EE5601]">
                     <div className=" static lg:w-auto  pr-6 pl-0 lg:static lg:block  ml-0">
                         <button className="bg-gradient-to-r from-[#FF6200] via-[#FF861B] to-[#FF861B]  text-white active:bg-amber-600 font-bold text-sm px-6 py-3 rounded-r-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 ml-0 self-start h-[70px]" type="button"
@@ -48,7 +48,7 @@ export const Header = () => {
                         <span className='text-[#495867] text-sm pr-2'>Tarjeta CMR</span>
                         <span className='text-[#495867] text-sm pr-2'>Venta telefónica</span>
                         <span className='text-[#495867] text-sm pr-2'>Novios</span>
-                        <span className='text-[#495867] text-sm'>Ayuda</span>
+                        <span className='text-[#495867] text-sm pr-2'>Ayuda</span>
                     </div>
                 </div>
                 <img className='w-full h-[45px]' src="../src/img/img-header.png" alt='header-gray' />
