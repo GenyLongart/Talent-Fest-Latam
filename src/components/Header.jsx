@@ -23,7 +23,7 @@ export const Header = () => {
                         <ul className="flex flex-collg:flex-row list-none items-center">
                             <li className="nav-item">
                                 <a className="flex items-center font-bold leading-snug text-white hover:opacity-75">
-                                     <span className="text-lg pr-2">Inicia sesión</span>
+                                    <span className="text-lg pr-2">Inicia sesión</span>
                                 </a>
                             </li>
                             <li className="nav-item">
