@@ -20,16 +20,16 @@ export const ProductContainer = () => {
         <div className='flex justify-center mt-0  ml-[100px] mr-[45px] w-[1280px] h-[616px] bg-white'>
             <div className='flex '>
                 <div>
-                    <ProductImage product={product}/>
-                    <HelpInfo />
+                       <ProductImage product={product}/>
+                        <HelpInfo />
+                    </div>
                 </div>
-            </div>
-            <div >
-                <h1>product data</h1>
-                <h1>product price</h1>
-                <ProductActions />
-                <h1>product offerings opener</h1>
-                <Modal />
+                <div className='flex flex-col items-center'>
+                    <h1>product data</h1>
+                    <h1>product price</h1>
+                    <ProductActions />
+                    <h1>product offerings opener</h1>
+                    <Modal />
             </div> 
         </div>
     </div>
