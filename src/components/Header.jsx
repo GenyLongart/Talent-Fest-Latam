@@ -51,7 +51,7 @@ export const Header = () => {
                         <span className='text-[#495867] text-sm'>Ayuda</span>
                     </div>
                 </div>
-                <img className='w-full h-[45px]' src="../src/img/img-header.PNG" alt='header-gray' />
+                <img className='w-full h-[45px]' src="../src/img/img-header.png" alt='header-gray' />
             </nav>
         </div>
     )
