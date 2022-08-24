@@ -3,7 +3,8 @@ import {ProductContext} from '../contexts/productContext';
 import {ProductImage} from './ProductImage.jsx';
 import { HelpInfo } from './HelpInfo';
 import Modal from '../modal/Modal';
-import {ProductActions} from './ProductActions'
+import {ProductActions} from './ProductActions';
+import {ProductData} from './ProductData';
 
 export const ProductContainer = () => {
     const context = useContext(ProductContext);
@@ -25,7 +26,7 @@ export const ProductContainer = () => {
                     </div>
                 </div>
                 <div className='flex flex-col items-center'>
-                    <h1>product data</h1>
+                    <ProductData product = {product}/>
                     <h1>product price</h1>
                     <ProductActions />
                     <h1>product offerings opener</h1>
