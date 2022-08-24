@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ModalContainer from "./ModalContainer";
 import { BiChevronRight, BiX } from "react-icons/bi";
+// import BuyBox from "./BuyBox";
 import ModalTitle from "./ModalTitle";
 
 export default function Modal({ product }) {
@@ -48,6 +49,7 @@ export default function Modal({ product }) {
                   >
                     Save Changes
                   </button>
+                  {/* <BuyBox /> */}
                 </div>
               </div>
             </div>
