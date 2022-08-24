@@ -3,7 +3,7 @@ import ModalContainer from './ModalContainer'
 import { BiChevronRight, BiX } from "react-icons/bi";
 import ModalTitle from './ModalTitle'
 
-export default function Modal() {
+export default function Modal({product}) {
   const [showModal, setShowModal] = React.useState(false);
   return (
     <>
@@ -43,7 +43,8 @@ export default function Modal() {
                 </div>
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
-                  <ModalContainer />
+                <ModalContainer product = {product}/>
+
                 </div>
                 {/*footer*/}
                 <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
