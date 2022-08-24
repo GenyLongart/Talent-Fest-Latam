@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import {ProductContext} from '../contexts/productContext';
 import {ProductImage} from './ProductImage.jsx';
 import { HelpInfo } from './HelpInfo';
+import Modal from '../modal/Modal';
 
 export const ProductContainer = () => {
     const context = useContext(ProductContext);
@@ -14,21 +15,19 @@ export const ProductContainer = () => {
     }, []);
     if (!product) return ("cargando")
     return (
-    <div className='flex top-5'>
-        <div>
+    <div className='flex fixed mt-20'>
+        <div className='flex '>
             <div>
-                <ProductImage product={product}/> 
-            </div>
-            <div>
+                <ProductImage product={product}/>
                 <HelpInfo />
             </div>
-            
         </div>
-        <div>
+        <div >
             <h1>product data</h1>
             <h1>product price</h1>
             <h1>product actions</h1>
             <h1>product offerings opener</h1>
+            <Modal />
         </div>
 
         
