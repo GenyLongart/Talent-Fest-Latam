@@ -30,10 +30,10 @@ export const ProductContainer = () => {
             </div>
             <div className='flex flex-col items-center'>
                 <ProductData product = {product}/>
-                <h1>product price</h1>
+                <ProductPrice product = {product}/>
                 <ProductActions />
                 <h1>product offerings opener</h1>
-                <Modal />
+                <Modal product = {product}/>
             </div> 
         </div>
     </div>
