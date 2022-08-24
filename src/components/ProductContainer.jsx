@@ -30,7 +30,7 @@ export const ProductContainer = () => {
                 <div className='flex flex-col items-center'>
                     <h1>product data</h1>
                     <h1>product price</h1>
-                    <h1>product actions</h1>
+                    <ProductActions />
                     <h1>product offerings opener</h1>
                     <Modal />
                 </div>
