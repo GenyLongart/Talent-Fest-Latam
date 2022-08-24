@@ -13,7 +13,6 @@ function App() {
       <div className="App">
         <Header />
         <ProductContainer />
-        <h2>HOLA TALENT FEST</h2>
       </div>
       </LocationContext.Provider>
     </ProductContext.Provider>
