@@ -1,13 +1,10 @@
-import { createContext, useState} from "react";
+import { createContext } from "react";
 import axios from "axios";
 
 const locationInfo =
   "https://raw.githubusercontent.com/ivanmirson/hackathon-laboratoria/main/buybox/regionComuna.json";
 
-const [region, setRegion] =useState([]);
-const [district, setDistrict] = useState([]);
-
-function RegionDistrictContext() {
+function RegionDistrictSchema() {
   const regionDistrictData = async () => {
     const request = await axios.get(locationInfo);
     const data = request.data.regionComuna;
@@ -16,24 +13,23 @@ function RegionDistrictContext() {
 
   const regionData = async () => {
     const regions = await regionDistrictData();
-    console.log(regions);
-    const state = regions.map((item) => {
-      console.log(item.region);
-    });
-    setRegion(state);
-    console.log(region)
+    // console.log(regions);
+    const state = regions.map(item => item.region);
+    console.log(state)
+    return state
   };
-  regionData();
+ 
 
   const districtData = async () => {
     const districts = await regionDistrictData();
-    console.log(districts);
-    const location = districts.map((item) => {
-      console.log(item.comuna);
-    });
-    return setDistrict(location);
+    // console.log(districts);
+    const location = districts.map(item =>  item.comuna);
+    console.log(location)
+    return location
   };
-  districtData();
+  return { regionDistrictData, regionData, districtData }
 }
 
-export default createContext(RegionDistrictContext());
+const LocationContext = createContext();
+
+export { LocationContext, RegionDistrictSchema}
