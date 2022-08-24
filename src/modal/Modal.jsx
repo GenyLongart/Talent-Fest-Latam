@@ -1,9 +1,9 @@
-import React, {useState,} from "react";
-import ModalContainer from './ModalContainer'
+import React, { useState } from "react";
+import ModalContainer from "./ModalContainer";
 import { BiChevronRight, BiX } from "react-icons/bi";
-import ModalTitle from './ModalTitle'
+import ModalTitle from "./ModalTitle";
 
-export default function Modal({product}) {
+export default function Modal({ product }) {
   const [showModal, setShowModal] = React.useState(false);
   return (
     <>
@@ -12,39 +12,32 @@ export default function Modal({product}) {
         type="button"
         onClick={() => setShowModal(true)}
       >
-        Revisar alternativas <BiChevronRight/>
+        Revisar alternativas <BiChevronRight />
       </button>
       {showModal ? (
         <>
-          <div
-            className="h-[768px] mr-0  items-end flex justify-end overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
-          >
+          <div className="h-[768px] mr-0  items-end flex justify-end overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-[760px] h-[768px]">
               {/*content*/}
               <div className="h-[768px] border-0 shadow-lg relative flex flex-col w-[760px] bg-white outline-none focus:outline-none">
                 {/*header*/}
-                <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                <div className=" flex justify-end p-5 border-b border-solid border-slate-200 rounded-t">
+                  <div className="mr-[25%]">
                   <ModalTitle />
+                  </div>
+                  <div className="">
                   <button
-                    className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                    onClick={() => setShowModal(false)}
-                  >
-                    <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
-                      ×
-                    </span>
-                  </button>
-                  <button
-                    className="text-[#767676] w-[1.5px] h-[15.91px] background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="text-[#767676] w-[1.5px] h-[15.91px] background-transparent font-bold uppercase px-6 py-2 text-[25px] outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
                     <BiX />
                   </button>
+                  </div>
                 </div>
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
-                <ModalContainer product = {product}/>
-
+                  <ModalContainer product={product} />
                 </div>
                 {/*footer*/}
                 <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
