@@ -26,7 +26,7 @@ export const ProductContainer = () => {
                         <HelpInfo />
                     </div>
                 </div>
-                <div className='flex flex-col items-center'>
+                <div className='font-Lato flex flex-col items-center'>
                     <ProductData product={product} />
                     <ProductPrice product= {product}/>
                     <ProductActions />

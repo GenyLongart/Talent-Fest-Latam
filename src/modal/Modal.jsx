@@ -1,16 +1,17 @@
 import React, {useState,} from "react";
 import ModalContainer from './ModalContainer'
+import { BiChevronRight } from "react-icons/bi";
 
 export default function Modal() {
   const [showModal, setShowModal] = React.useState(false);
   return (
     <>
       <button
-        className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+        className="bg-white font-Lato text-[#4A4A4A] text-sm px-0 py-3 rounded outline-none mr-0 mb-1 ease-linear transition-all duration-150"
         type="button"
         onClick={() => setShowModal(true)}
       >
-        Open regular modal
+        Revisar alternativas <BiChevronRight/>
       </button>
       {showModal ? (
         <>
@@ -22,7 +23,7 @@ export default function Modal() {
               <div className="h-[768px] border-0 shadow-lg relative flex flex-col w-[760px] bg-white outline-none focus:outline-none">
                 {/*header*/}
                 <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
-                  <h3 className="text-3xl font-semibold">
+                  <h3 className=" font-Lato text-3xl ">
                     Modal Title
                   </h3>
                   <button
@@ -37,7 +38,7 @@ export default function Modal() {
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
                   <ModalContainer />
-                  <p className="my-4 text-slate-500 text-lg leading-relaxed">
+                  <p className="my-4 text-slate-500 text-lg font-Lato leading-relaxed">
                     I always felt like I could do anything. That’s the main
                     thing people are controlled by! Thoughts- their perception
                     of themselves! They're slowed down by their perception of
@@ -55,7 +56,7 @@ export default function Modal() {
                     Close
                   </button>
                   <button
-                    className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="bg-emerald-500 font-Lato text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >
