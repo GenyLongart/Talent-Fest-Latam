@@ -42,7 +42,7 @@ export const Header = () => {
                     </div>
                     <div>
                         <p className='text-[#495867] text-lg align-middle pr-3 px-6 inline'>Nuestras tiendas: </p>
-                        <div className='w-36 inline-flex justify-between align-middle'><img className='w-8' src="../src/img/falabella-store-logo.svg" alt="falaferia" /><img className='w-8' src="../src/img/sodimac-logo.svg" alt="honcenter" /><img className='w-8' src="../src/img/tottus-logo.svg" alt="tottus" /><img className='w-8' src="../src/img/linio-logo.svg" alt="linio" /></div></div>
+                        <div className='w-36 inline-flex justify-between align-middle'><img className='w-8' src="../src/img/falabella-store-logo.svg" alt="falabella" /><img className='w-8' src="../src/img/sodimac-logo.svg" alt="sodimac" /><img className='w-8' src="../src/img/tottus-logo.svg" alt="tottus" /><img className='w-8' src="../src/img/linio-logo.svg" alt="linio" /></div></div>
                     <div>
                         <span className='text-[#495867] text-sm pr-2'>Vende en Falabella.com</span>
                         <span className='text-[#495867] text-sm pr-2'>Tarjeta CMR</span>
