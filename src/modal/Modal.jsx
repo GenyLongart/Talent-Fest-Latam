@@ -2,7 +2,7 @@ import React, {useState,} from "react";
 import ModalContainer from './ModalContainer'
 import { BiChevronRight } from "react-icons/bi";
 
-export default function Modal() {
+export default function Modal({product}) {
   const [showModal, setShowModal] = React.useState(false);
   return (
     <>
@@ -37,7 +37,7 @@ export default function Modal() {
                 </div>
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
-                  <ModalContainer />
+                  <ModalContainer product = {product}/>
                   <p className="my-4 text-slate-500 text-lg font-Lato leading-relaxed">
                     I always felt like I could do anything. That’s the main
                     thing people are controlled by! Thoughts- their perception

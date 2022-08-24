@@ -31,7 +31,7 @@ export const ProductContainer = () => {
                     <ProductPrice product= {product}/>
                     <ProductActions />
                     <h1>product offerings opener</h1>
-                    <Modal />
+                    <Modal product = {product}/>
                 </div>
             </div>
         </div>
