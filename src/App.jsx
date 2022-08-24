@@ -4,6 +4,7 @@ import {ProductContainer} from './components/ProductContainer'
 import { Header } from './components/Header'
 import {ProductContext, getDefaultValue} from './contexts/productContext'
 import { LocationContext, RegionDistrictSchema } from './contexts/regionDistrictProvider'
+import { ProductData } from './components/ProductData'
 function App() {
 
   return (
