@@ -16,7 +16,7 @@ export default function Modal() {
           <div
             className="h-[768px] mr-0  items-center flex justify-end overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none"
           >
-            <div className="relative  my-0 mx-auto max-w-3xl w-[760px] h-[768px]">
+            <div className="relative my-0 mx-auto max-w-3xl w-[760px] h-[768px]">
               {/*content*/}
               <div className="h-[768px] border-0 shadow-lg relative flex flex-col w-[760px] bg-white outline-none focus:outline-none">
                 {/*header*/}

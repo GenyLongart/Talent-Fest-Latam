@@ -11,14 +11,13 @@ function App() {
 
     <ProductContext.Provider value={getDefaultValue()}>
       <LocationContext.Provider value={RegionDistrictSchema()}>
-      <div className="App">
-        <div>
+      
+      
           <Header />
-        </div>
-        <div>
+       
+      
           <ProductContainer />
-        </div>
-      </div>
+    
       </LocationContext.Provider>
     </ProductContext.Provider>
   )
