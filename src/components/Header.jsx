@@ -8,15 +8,15 @@ export const Header = () => {
 
     return (
         <>
-            <nav className="h-[70px] w-fit relative flex flex-wrap items-center pr-2 pl-0 py-0 bg-[#EE5601] mb-3">
+            <nav className="h-[70px] w-fit static flex flex-wrap items-center pr-2 pl-0 py-0 bg-[#EE5601] mb-3">
                 <div className="container h-[70px] pr-2 pl-0 mx-auto flex flex-wrap items-center justify-right ml-0">
-                    <div className=" relative lg:w-auto  pr-6 pl-0 lg:static lg:block  ml-0">
+                    <div className=" static lg:w-auto  pr-6 pl-0 lg:static lg:block  ml-0">
                         <button className="bg-gradient-to-r from-[#FF6200] via-[#FF861B] to-[#FF861B]  text-white active:bg-amber-600 font-bold text-sm px-6 py-3 rounded-r-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 ml-0 self-start h-[70px]" type="button"
                         >
                             <img src="../src/img/falabella-logo.svg" alt="" />
                         </button>
                     </div>
-                    <div className="relative flex w-full sm:w-7/12 md:w-5/12 px-4 flex-wrap items-center lg:ml-auto">
+                    <div className="static flex w-full sm:w-7/12 md:w-5/12 px-4 flex-wrap items-center lg:ml-auto">
                         <input type="text" className="bg-white px-2 py-1 h-8 border border-solid text-sm leading-snug text-[#6C7883] shadow-none outline-none focus:outline-none w-full font-normal rounded-full flex-1 border-l-0 placeholder-[#6C7883]" placeholder="Buscar en falabella.com" />
                     </div>
                     <div className="lg:flex flex-grow justify-end" id="example-navbar-warning w-56" >
