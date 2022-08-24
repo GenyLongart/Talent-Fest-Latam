@@ -18,22 +18,21 @@ export const ProductContainer = () => {
     }, []);
     if (!product) return ("cargando")
     return (
-        <div className='w-screen justify-center my-0 content-center bg-[#E6E6E6]'>
-            <div className='flex justify-center mt-0 ml-[100px] mr-[45px] w-[750px] bg-white'>
-                <div className='flex '>
-                    <div className='pt-1'>
-                        <ProductImage product={product} />
-                        <HelpInfo />
-                    </div>
-                </div>
-                <div className='font-Lato flex flex-col items-center'>
-                    <ProductData product={product} />
-                    <ProductPrice product= {product}/>
-                    <ProductActions />
-                    <h1>product offerings opener</h1>
-                    <Modal />
+    <div className='flex w-full h-full justify-center mt-0 my-0 bg-[#E6E6E6]'>
+        <div className='flex  justify-between  p-4 w-[1200px] h-[750px] bg-white'>
+            <div className='flex '>
+                <div>
+                    <ProductImage product={product}/>
+                    <HelpInfo />
                 </div>
             </div>
+            <div className='flex flex-col items-center'>
+                <ProductData product = {product}/>
+                <h1>product price</h1>
+                <ProductActions />
+                <h1>product offerings opener</h1>
+                <Modal />
+            </div> 
         </div>
     )
 }
