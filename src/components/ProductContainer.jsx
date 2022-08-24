@@ -16,14 +16,11 @@ export const ProductContainer = () => {
     }, []);
     if (!product) return ("cargando")
     return (
-        
-
-    <div className='bg-black' >
-        <div className='flex flex-col mt-4 items-center '>
-            <div className='flex fixed mt-20 border-4 border-red-700 justify-between w-[1130px]'>
-                <div className='flex border-4 border-blue-800'>
-                    <div>
-                        <ProductImage product={product}/>
+    <div className='w-full justify-center mt-0  pb-[39px] my-0 content-center bg-[#E6E6E6]'>
+        <div className='flex justify-center mt-0  ml-[100px] mr-[45px] w-[1280px] h-[616px] bg-white'>
+            <div className='flex '>
+                <div>
+                       <ProductImage product={product}/>
                         <HelpInfo />
                     </div>
                 </div>
@@ -33,8 +30,7 @@ export const ProductContainer = () => {
                     <ProductActions />
                     <h1>product offerings opener</h1>
                     <Modal />
-                </div>
-            </div>
+            </div> 
         </div>
     </div>
 )  
