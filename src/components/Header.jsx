@@ -51,6 +51,7 @@ export const Header = () => {
                         <span className='text-[#495867] text-sm'>Ayuda</span>
                     </div>
                 </div>
+                <img className='w-full' src="../src/img/img-header.PNG" alt='header-gray' />
             </nav>
         </>
     )
