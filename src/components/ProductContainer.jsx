@@ -1,19 +1,20 @@
 import React, { useContext, useEffect, useState } from 'react';
 import {ProductContext} from '../contexts/productContext';
+import {ProductImage} from './ProductImage.jsx';
 
 export const ProductContainer = () => {
     const context = useContext(ProductContext);
-    const [product, setProduct] = useState();
+    const [product, setProduct] = useState(false);
 
     useEffect(async () => {
         const response = await context.productsData();
         setProduct(response.data);
+        console.log(response.data)
     }, []);
-
+    if (!product) return ("cargando")
     return (
     <div>
-        <h1>holi</h1>
-        : {Array.isArray(product?.images) ? console.log('holis', product.images) : ''}
+        <ProductImage product={product}/>
     </div>
 )  
 }
