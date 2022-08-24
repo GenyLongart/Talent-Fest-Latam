@@ -1,4 +1,5 @@
 import React, {useState,} from "react";
+import ModalContainer from './ModalContainer'
 
 export default function Modal() {
   const [showModal, setShowModal] = React.useState(false);
@@ -35,6 +36,7 @@ export default function Modal() {
                 </div>
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
+                  <ModalContainer />
                   <p className="my-4 text-slate-500 text-lg leading-relaxed">
                     I always felt like I could do anything. That’s the main
                     thing people are controlled by! Thoughts- their perception
