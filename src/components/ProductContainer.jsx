@@ -34,5 +34,6 @@ export const ProductContainer = () => {
                 <Modal />
             </div> 
         </div>
+    </div>
     )
 }
