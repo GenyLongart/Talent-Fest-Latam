@@ -14,15 +14,12 @@ export const ProductContainer = () => {
     }, []);
     if (!product) return ("cargando")
     return (
-    <div className='flex top-5'>
-        <div>
+    <div className='flex fixed mt-20'>
+        <div className='flex '>
             <div>
-                <ProductImage product={product}/> 
-            </div>
-            <div>
+                <ProductImage product={product}/>
                 <HelpInfo />
             </div>
-            
         </div>
         <div>
             <h1>product data</h1>
