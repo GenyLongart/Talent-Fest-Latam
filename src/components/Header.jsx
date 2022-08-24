@@ -48,10 +48,10 @@ export const Header = () => {
                         <span className='text-[#495867] text-sm pr-2'>Tarjeta CMR</span>
                         <span className='text-[#495867] text-sm pr-2'>Venta telefónica</span>
                         <span className='text-[#495867] text-sm pr-2'>Novios</span>
-                        <span className='text-[#495867] text-sm'>Ayuda</span>
+                        <span className='text-[#495867] text-sm pr-2'>Ayuda</span>
                     </div>
                 </div>
-                <img className='w-full h-[45px]' src="../src/img/img-header.PNG" alt='header-gray' />
+                <img className='w-full h-[45px]' src="../src/img/img-header.png" alt='header-gray' />
             </nav>
         </div>
     )
