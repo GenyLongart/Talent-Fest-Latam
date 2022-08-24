@@ -5,6 +5,7 @@ import { HelpInfo } from './HelpInfo';
 import Modal from '../modal/Modal';
 import { ProductActions } from './ProductActions';
 import { ProductData } from './ProductData';
+import { ProductPrice } from './ProductPrice';
 
 export const ProductContainer = () => {
     const context = useContext(ProductContext);
@@ -27,7 +28,7 @@ export const ProductContainer = () => {
                 </div>
                 <div className='flex flex-col items-center'>
                     <ProductData product={product} />
-                    <h1>product price</h1>
+                    <ProductPrice product= {product}/>
                     <ProductActions />
                     <h1>product offerings opener</h1>
                     <Modal />
