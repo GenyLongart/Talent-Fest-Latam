@@ -18,7 +18,7 @@ export const ProductPrice = ({ product }) => {
     <div className=" flex flex-col jutify-start">
       <img
         className=" h-[30px] w-[130px]"
-        src="../src/img/icon-price.svg"
+        src="https://raw.githubusercontent.com/GenyLongart/Talent-Fest-Latam/800b89333801080380f97939456e1bf6a111b6d3/src/img/icon-price.svg"
         alt=""
       />
       <div className="flex flex-row">
