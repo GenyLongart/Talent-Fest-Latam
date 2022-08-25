@@ -1,21 +1,19 @@
 import React, {useState, useEffect} from "react"
 import { AiFillStar, AiOutlineCheck } from "react-icons/ai";
+import productHelpers from "../productHelpers/ProductHelpers";
 
 export default function  BuyList ({product, activeFilter, filterFreeShipping}) {
-  const [offerings, setOfferings] = useState([]);
-  // const {productData} = useContext(ProductContext)
 
-  useEffect(()=>{
-    setOfferings(product?.offerings)
-  }
-  ,[product])
-  // const offeringList = product.data.map(item => item.offerings)
-  console.log(product)
+  const orderFunctionMap = {
+      precio: productHelpers.orderPrices,
+      shipping: productHelpers.orderTimes,
+  };
 
+  const orderedOfferings = orderFunctionMap[activeFilter](product, filterFreeShipping);
 
   return (
     <div className="w-full grid justify-around">
-        {product ? offerings.map(item => (
+        {product ? orderedOfferings.map(item => (
           
       <div key="item" className="shadow-md h-[110px] w-[672px] rounded flex flex-row justify-between ml-[20px] mb-[30px]">
         <div className="flex flex-col">
