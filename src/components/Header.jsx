@@ -80,7 +80,7 @@ export const Header = () => {
                     
 
                 </div>
-                <img className='w-full h-[55px]' src="/img/img-header.png" alt='header-gray' />
+                <img className='w-full h-[55px]' src="https://raw.githubusercontent.com/GenyLongart/Talent-Fest-Latam/master/public/img/img-header.PNG" alt='header-gray' />
             </nav>
         </div>
     )
