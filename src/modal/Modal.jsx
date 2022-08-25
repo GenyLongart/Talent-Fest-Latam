@@ -4,7 +4,7 @@ import { BiChevronRight, BiX } from "react-icons/bi";
 import BuyBox from "./BuyBox";
 import ModalTitle from "./ModalTitle";
 
-export default function Modal({ product }) {
+export default function Modal({ product, location }) {
   const [showModal, setShowModal] = React.useState(false);
   return (
     <>
@@ -38,7 +38,7 @@ export default function Modal({ product }) {
                 </div>
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
-                  <ModalContainer product={product} />
+                  <ModalContainer product={product} location={location} />
                 <div className="flex items-center justify-around p-6 border-t border-solid border-slate-200 rounded-b">
                   <BuyBox product={product}/>
                 </div>
