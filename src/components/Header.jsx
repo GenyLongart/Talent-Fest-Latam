@@ -62,10 +62,10 @@ export const Header = () => {
                         <div>
                             <p className='text-[#495867] text-lg pr-3 px-6 inline'>Nuestras tiendas: </p>
                             <div className='w-36 inline-flex justify-between align-middle'>
-                                <img className='w-8' src="/img/falabella-store-logo.svg" alt="falabella" />
-                                <img className='w-8' src="/img/sodimac-logo.svg" alt="sodimac" />
-                                <img className='w-8' src="/img/tottus-logo.svg" alt="tottus" />
-                                <img className='w-8' src="/img/linio-logo.svg" alt="linio" />
+                                <img className='w-8' src="https://raw.githubusercontent.com/GenyLongart/Talent-Fest-Latam/77c32d86e428a40acbd9a42730dfe6940918feed/public/img/falabella-store-logo.svg" alt="falabella" />
+                                <img className='w-8' src="https://raw.githubusercontent.com/GenyLongart/Talent-Fest-Latam/77c32d86e428a40acbd9a42730dfe6940918feed/public/img/sodimac-logo.svg" alt="sodimac" />
+                                <img className='w-8' src="https://raw.githubusercontent.com/GenyLongart/Talent-Fest-Latam/77c32d86e428a40acbd9a42730dfe6940918feed/public/img/tottus-logo.svg" alt="tottus" />
+                                <img className='w-8' src="https://raw.githubusercontent.com/GenyLongart/Talent-Fest-Latam/77c32d86e428a40acbd9a42730dfe6940918feed/public/img/linio-logo.svg" alt="linio" />
                             </div>
                         </div>
                         <p className='text-4xl text-gray-300 font-light'>|</p>
