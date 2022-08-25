@@ -1,5 +1,6 @@
 import React,{useContext, useEffect, useState} from 'react'
 import { ProductContext } from '../contexts/productContext';
+import Modal from '../modal/Modal';
 
 
 
@@ -14,7 +15,7 @@ export const OfferingsOpener = () => {
     }, []);
     if (!product) return ("cargando")
   return (
-    <div className = 'h-[89px] w-[325px] bg-white rounded border border-black p-[5px] mt-[22px]'>
+    <div className = 'h-[95px] w-[325px] bg-white rounded border border-black p-[5px] mt-[22px]'>
         <h1 className='text-sm text-black-600 font-bold'> 
          
         Más vendedores ofrecen este producto
@@ -22,7 +23,7 @@ export const OfferingsOpener = () => {
         </h1> 
         
         <h1 className='text-sm text-gray-500'> {product.offerings.length} opciones desde $23.740</h1>
-
+        <Modal product = {product} />
     </div>
   )
 }
