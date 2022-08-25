@@ -9,7 +9,7 @@ export const HelpInfo = () => {
                     <h1 className="self-center">¿Necesitas ayuda? Llámanos al 6000880030 </h1>     
                 </div>
                 <div>
-                    <img src="../src/img/return-product .png" alt="devolucion" />
+                    <img className="w-[400px]" src="../src/img/return-product .png" alt="devolucion" />
                 </div>    
             </div>
             
