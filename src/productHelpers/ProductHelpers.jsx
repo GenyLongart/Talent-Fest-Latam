@@ -1,3 +1,4 @@
+
 const productHelpers = {
   orderPrices: (product, filterFreeShipping) => {
     const cloneProduct = { ...product };
@@ -24,9 +25,9 @@ const productHelpers = {
     
   },
 
-  orderTimes: (product, filterShippingPrice) => {
+  orderTimes: (product, filterFreeShipping) => {
     const cloneProduct = { ...product };
-    if(filterShippingPrice===true){
+    if(filterFreeShipping===true){
       cloneProduct.offerings = cloneProduct.offerings.filter((offering) =>
         offering.shippingPrice != 0
       )
