@@ -22,8 +22,10 @@ export const ProductPrice = ({ product }) => {
         alt=""
       />
       <div className="flex flex-row">
-        <h1 className="text-sm text-red-600 inline-block mr-[5px]">
-          Desde ${result.minSpecialPrice} Hasta ${result.maxSpecialPrice}
+        <h1 className="text-base text-red-600 inline-block mr-[5px]">
+          {" "}
+          Desde $7.430 Hasta $7.750{" "}
+
         </h1>
         <p className="inline h-[18px] w-[34px] p-[1px] bg-[#EB0029] text-white  font-bold rounded-[3px] text-[12px]">
           -30%
