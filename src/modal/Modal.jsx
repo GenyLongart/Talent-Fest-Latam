@@ -17,7 +17,7 @@ export default function Modal({ product, location }) {
       </button>
       {showModal ? (
         <>
-          <div className="h-[768px] mr-0  items-end flex justify-end overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+          <div className="h-[1000px] mr-0  mt-0 flex justify-end overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
             <div className="relative w-[760px] h-[768px]">
               {/*content*/}
               <div className="h-[1000px] border-0 shadow-lg relative flex flex-col w-[760px] bg-white outline-none focus:outline-none">
