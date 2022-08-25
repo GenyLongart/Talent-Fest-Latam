@@ -6,7 +6,11 @@ import Modal from '../modal/Modal';
 import { ProductActions } from './ProductActions';
 import { ProductData } from './ProductData';
 import { ProductPrice } from './ProductPrice';
+
 import { OfferingsOpener } from './OfferingsOpener';
+
+import BuyBox from "../modal/BuyBox";
+
 
 export const ProductContainer = () => {
     const context = useContext(ProductContext);
@@ -25,6 +29,7 @@ export const ProductContainer = () => {
                 <div>
                     <ProductImage product={product}/>
                     <HelpInfo />
+                    <BuyBox />
                 </div>
             </div>
             <div className='flex flex-col  justify-start'>
