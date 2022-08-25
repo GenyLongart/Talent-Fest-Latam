@@ -4,8 +4,7 @@ import { AiOutlineShareAlt } from "react-icons/ai";
 export const ProductData = ({product}) => {
   return (
 
-    <div className='font-Lato w-[450px]'>
-      <div>
+    <div className='font-Lato w-[650px]'>
         <p className='text-sm font-bold inline'>{product.brand}</p>
         <p className='text-xs ml-[40%] text-gray-500 inline'>Código del producto: {product.productId}</p>
       </div>
