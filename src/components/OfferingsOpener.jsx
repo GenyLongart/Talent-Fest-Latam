@@ -26,6 +26,7 @@ export const OfferingsOpener = () => {
         <span className = 'p-[2px] items-center text-xs h-[10px] w-[auto]  bg-[#1E364B] text-white text-center font-bold rounded-lg mx-1'>NUEVO</span> 
         </h1> 
         <h1 className='text-sm text-gray-500'> {product.offerings.length} opciones desde ${result.minSpecialPrice}</h1>
+        <Modal product = {product} />
     </div>
   )
 }
