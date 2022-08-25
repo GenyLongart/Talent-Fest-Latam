@@ -1,17 +1,11 @@
 import React, {useState}from "react";
 import BuyList from "./BuyList";
-import productHelpers from "../productHelpers/ProductHelpers";
 
 
 export default function  BuyBox ({product}) {
   const [activeFilter, setActiveFilter] = useState('precio');
   const [filterFreeShipping, setFilterFreeShipping] = useState(false);
-
-  const productHelpers = {
-      precio: orderPrices,
-      shipping: orderTimes,
-  };
-
+  
   return (
     <div>
     <div className=" w-full font-Latos grid">
