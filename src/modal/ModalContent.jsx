@@ -34,10 +34,10 @@ const ModalContent = ({ product }) => {
         </select>
 
         <select className="rounded-[4px] w-[316px] h-[48px] border-[1px] border-[#767676]" id="selectDistrict">
+          <option value="melipilla">Melipilla</option>
           <option value="alhue">Alhué</option>
           <option value="curacavi">Curacaví</option>
           <option value="mariapinto">María Pinto</option>
-          <option value="melipilla">Melipilla</option>
         </select>
       </div>
 

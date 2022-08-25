@@ -1,21 +1,24 @@
 
 export default function  BuyList () {
   return (
-<tbody className="font-Lato">
-<tr>
-  <td>The Sliding Mr. Bones (Next Stop, Pottersville)</td>
-  <td>Malcolm Lockyer</td>
-  <td>1961</td>
-</tr>
-<tr>
-  <td>Witchy Woman</td>
-  <td>The Eagles</td>
-  <td>1972</td>
-</tr>
-<tr>
-  <td>Shining Star</td>
-  <td>Earth, Wind, and Fire</td>
-  <td>1975</td>
-</tr>
-</tbody>
+    <div className="w-full grid justify-around">
+      <div className="shadow-md h-[110px] w-[672px] rounded ">
+        <span>The Sliding Mr. Bones</span>
+        <span>Malcolm Lockyer</span>
+        <span>1961</span>
+        <button className="h-[43px] w-[202px] rounded-full bg-[#FF6200] text-white font-bold text-lg text-center"></button>
+      </div>
+      <div className="shadow-md h-[110px] w-[672px] rounded">
+        <span>Witchy Woman</span>
+        <span>The Eagles</span>
+        <span>1972</span>
+        <button className=" h-[43px] w-[202px] rounded-full bg-[#FF6200] text-white font-bold text-lg text-center"></button>
+      </div>
+      <div className="shadow-md h-[110px] w-[672px] rounded">
+        <span>Shining Star</span>
+        <span>Earth, Wind, and Fire</span>
+        <span>1975</span>
+        <button className=" h-[43px] w-[202px] rounded-full bg-[#FF6200] text-white font-bold text-lg text-center"></button>
+      </div>
+    </div>
 )}
