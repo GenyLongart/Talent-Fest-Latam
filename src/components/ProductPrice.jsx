@@ -2,6 +2,7 @@ import React from "react";
 
 export const ProductPrice = ({ product }) => {
   return (
+
     <div className=" flex flex-col jutify-start">
       <img
         className=" h-[30px] w-[130px]"
