@@ -10,7 +10,7 @@ export const Header = () => {
                 <div className="w-screen h-[70px] pr-2 pl-0 mx-auto flex flex-wrap items-center justify-right ml-0 bg-[#EE5601]">
                     <div className=" static lg:w-auto pl-0 lg:static lg:block  ml-0">
                         <button className="bg-gradient-to-r from-[#FF6200] via-[#FF861B] to-[#FF861B]  text-white active:bg-amber-600 font-bold text-sm px-6 py-3 rounded-r-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 ml-0 self-start h-[70px]" type="button">
-                            <img src="../src/img/falabella-logo.svg" alt="" />
+                            <img src="/img/falabella-logo.svg" alt="" />
                         </button>
                     </div>
                     <div className='flex justify-center items-center h-[70px] w-[196px]'>
@@ -55,17 +55,17 @@ export const Header = () => {
                 </div>
                 <div className='bg-white h-[50px] w-full flex items-center justify-between'>
                     <div>
-                        <img className='w-8 inline' src="../src/img/location.svg" />
+                        <img className='w-8 inline' src="/img/location.svg" />
                         <p className='text-[#495867] text-lg align-middle pl-0 pr-6 px-6 inline'>Entrega en Ñuñoa</p>
                     </div>
                     <div className='flex flex-row w-[884px] items-center'>
                         <div>
                             <p className='text-[#495867] text-lg pr-3 px-6 inline'>Nuestras tiendas: </p>
                             <div className='w-36 inline-flex justify-between align-middle'>
-                                <img className='w-8' src="../src/img/falabella-store-logo.svg" alt="falabella" />
-                                <img className='w-8' src="../src/img/sodimac-logo.svg" alt="sodimac" />
-                                <img className='w-8' src="../src/img/tottus-logo.svg" alt="tottus" />
-                                <img className='w-8' src="../src/img/linio-logo.svg" alt="linio" />
+                                <img className='w-8' src="/img/falabella-store-logo.svg" alt="falabella" />
+                                <img className='w-8' src="/img/sodimac-logo.svg" alt="sodimac" />
+                                <img className='w-8' src="/img/tottus-logo.svg" alt="tottus" />
+                                <img className='w-8' src="/img/linio-logo.svg" alt="linio" />
                             </div>
                         </div>
                         <p className='text-4xl text-gray-300 font-light'>|</p>
@@ -80,7 +80,7 @@ export const Header = () => {
                     
 
                 </div>
-                <img className='w-full h-[55px]' src="../src/img/img-header.png" alt='header-gray' />
+                <img className='w-full h-[55px]' src="/img/img-header.png" alt='header-gray' />
             </nav>
         </div>
     )
