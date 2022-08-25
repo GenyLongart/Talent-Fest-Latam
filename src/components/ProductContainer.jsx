@@ -7,16 +7,22 @@ import { ProductActions } from './ProductActions';
 import { ProductData } from './ProductData';
 import { ProductPrice } from './ProductPrice';
 import { OfferingsOpener } from './OfferingsOpener';
+import { LocationContext } from '../contexts/regionDistrictProvider';
 
 export const ProductContainer = () => {
     const context = useContext(ProductContext);
     const [product, setProduct] = useState(false);
+    const contextLocation = useContext(LocationContext);
+    const [location, setLocation] = useState(false);
 
     useEffect(async () => {
         const response = await context.productsData();
+        const responseLocation = await contextLocation.regionDistrictData();
         setProduct(response.data);
+        setLocation(responseLocation);
         console.log(response.data)
     }, []);
+
     if (!product) return ("cargando")
     return (
     <div className='flex w-full h-full justify-center  mt-0 my-0 bg-[#E6E6E6]'>
@@ -31,7 +37,7 @@ export const ProductContainer = () => {
                 <ProductData product = {product}/>
                 <ProductPrice product = {product}/>
                 <ProductActions />
-                <OfferingsOpener product = {product}/>
+                <OfferingsOpener product = {product} location={location}/>
                 
             </div> 
         </div>

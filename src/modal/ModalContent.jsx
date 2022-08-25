@@ -2,7 +2,7 @@ import React, {useState, useEffect, useContext}from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
 import { LocationContext } from '../contexts/regionDistrictProvider';
 
-const ModalContent = ({ product }) => {
+const ModalContent = ({ product, location }) => {
   // const contextLocation = useContext(LocationContext);
   // const [location, setLocation] = useState(false);
   
@@ -10,7 +10,7 @@ const ModalContent = ({ product }) => {
   //   const response = await contextLocation.regionDistrictData();
   //   setLocation(response);
   // }, []);
-  // if (!location) return ("cargando")
+  if (!location) return ("cargando")
   return (
     <div>
       <div className="flex flex-row items-center">

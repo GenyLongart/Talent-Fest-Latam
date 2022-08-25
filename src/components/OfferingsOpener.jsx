@@ -1,19 +1,19 @@
 import React,{useContext, useEffect, useState} from 'react'
-import { ProductContext } from '../contexts/productContext';
+// import { ProductContext } from '../contexts/productContext';
 import Modal from '../modal/Modal';
 import minby from "lodash.minby"
 
 
 
-export const OfferingsOpener = () => {
-  const context = useContext(ProductContext);
-  const [product, setProduct] = useState(false);
+export const OfferingsOpener = ({product, location}) => {
+  // const context = useContext(ProductContext);
+  // const [product, setProduct] = useState(false);
   
-  useEffect(async () => {
-    const response = await context.productsData();
-    setProduct(response.data);
-    console.log(response.data)
-  }, []);
+  // useEffect(async () => {
+  //   const response = await context.productsData();
+  //   setProduct(response.data);
+  //   console.log(response.data)
+  // }, []);
   if (!product) return ("cargando")
   const minSpecialPrice = minby(product.offerings, (o) => o.specialPrice).specialPrice;
   const result = {
@@ -26,7 +26,7 @@ export const OfferingsOpener = () => {
         <span className = 'p-[2px] items-center text-xs h-[10px] w-[auto]  bg-[#1E364B] text-white text-center font-bold rounded-lg mx-1'>NUEVO</span> 
         </h1> 
         <h1 className='text-sm text-gray-500'> {product.offerings.length} opciones desde ${result.minSpecialPrice}</h1>
-        <Modal product = {product} />
+        <Modal product = {product} location={location} />
     </div>
   )
 }
