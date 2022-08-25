@@ -10,7 +10,7 @@ export const Header = () => {
                 <div className="w-screen h-[70px] pr-2 pl-0 mx-auto flex flex-wrap items-center justify-right ml-0 bg-[#EE5601]">
                     <div className=" static lg:w-auto pl-0 lg:static lg:block  ml-0">
                         <button className="bg-gradient-to-r from-[#FF6200] via-[#FF861B] to-[#FF861B]  text-white active:bg-amber-600 font-bold text-sm px-6 py-3 rounded-r-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 ml-0 self-start h-[70px]" type="button">
-                            <img src="/img/falabella-logo.svg" alt="" />
+                            <img src="https://raw.githubusercontent.com/GenyLongart/Talent-Fest-Latam/77c32d86e428a40acbd9a42730dfe6940918feed/public/img/falabella-logo.svg" alt="" />
                         </button>
                     </div>
                     <div className='flex justify-center items-center h-[70px] w-[196px]'>
@@ -55,7 +55,7 @@ export const Header = () => {
                 </div>
                 <div className='bg-white h-[50px] w-full flex items-center justify-between'>
                     <div>
-                        <img className='w-8 inline' src="/img/location.svg" />
+                        <img className='w-8 inline' src="https://raw.githubusercontent.com/GenyLongart/Talent-Fest-Latam/77c32d86e428a40acbd9a42730dfe6940918feed/public/img/location.svg" />
                         <p className='text-[#495867] text-lg align-middle pl-0 pr-6 px-6 inline'>Entrega en Ñuñoa</p>
                     </div>
                     <div className='flex flex-row w-[884px] items-center'>
