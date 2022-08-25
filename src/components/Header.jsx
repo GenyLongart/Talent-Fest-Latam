@@ -69,7 +69,7 @@ export const Header = () => {
                             </div>
                         </div>
                         <p className='text-4xl text-gray-300 font-light'>|</p>
-                        <div className='flex h-[50px] align-middle'>
+                        <div className='flex mt-8 px-4 h-[50px] '>
                             <span className='text-[#495867] text-sm pr-2'>Vende en Falabella.com</span>
                             <span className='text-[#495867] text-sm pr-2'>Tarjeta CMR <AiOutlineDown style={{display: 'inline', width: '16px', height: '16px', color: '#495867'}}/></span>
                             <span className='text-[#495867] text-sm pr-2'>Venta telefónica <AiOutlineDown style={{display: 'inline', width: '16px', height: '16px', color: '#495867'}}/></span>
