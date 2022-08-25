@@ -1,7 +1,7 @@
-import React, {useState, useEffect, useContext} from "react"
+import React, {useState, useEffect} from "react"
 import { AiFillStar, AiOutlineCheck } from "react-icons/ai";
 
-export default function  BuyList ({product}) {
+export default function  BuyList ({product, activeFilter, filterFreeShipping}) {
   const [offerings, setOfferings] = useState([]);
   // const {productData} = useContext(ProductContext)
 
