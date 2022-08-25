@@ -40,7 +40,7 @@ export default function Modal({ product }) {
                 <div className="relative p-6 flex-auto">
                   <ModalContainer product={product} />
                 <div className="flex items-center justify-around p-6 border-t border-solid border-slate-200 rounded-b">
-                  <BuyBox />
+                  <BuyBox product={product}/>
                 </div>
                 </div>
               </div>

@@ -1,6 +1,18 @@
 import React from "react";
+import maxby from "lodash.maxby";
+import minby from "lodash.minby";
 
 export const ProductPrice = ({ product }) => {
+  const minPrice = minby(product.offerings, (o) => o.price).price;
+  const maxPrice = maxby(product.offerings, (o) => o.price).price;
+  const minSpecialPrice = minby(product.offerings, (o) => o.specialPrice).specialPrice;
+  const maxSpecialPrice = maxby(product.offerings, (o) => o.specialPrice).specialPrice;
+  const result = {
+    minPrice,
+    maxPrice,
+    minSpecialPrice,
+    maxSpecialPrice,
+  };
   return (
 
     <div className=" flex flex-col jutify-start">
@@ -13,12 +25,13 @@ export const ProductPrice = ({ product }) => {
         <h1 className="text-base text-red-600 inline-block mr-[5px]">
           {" "}
           Desde $7.430 Hasta $7.750{" "}
+
         </h1>
         <p className="inline h-[18px] w-[34px] p-[1px] bg-[#EB0029] text-white  font-bold rounded-[3px] text-[12px]">
           -30%
         </p>
       </div>
-      <h1 className="text-base text-gray-500"> Desde $13.509 Hasta $14.159</h1>
+      <h1 className="text-sm text-gray-500"> Desde ${result.minPrice} Hasta ${result.maxPrice}</h1>
     </div>
   );
 };

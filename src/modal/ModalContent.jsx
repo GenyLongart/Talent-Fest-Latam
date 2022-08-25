@@ -1,7 +1,17 @@
-import React from "react";
+import React, {useState, useEffect, useContext}from "react";
 import { AiFillCheckCircle } from "react-icons/ai";
+import { LocationContext } from '../contexts/regionDistrictProvider';
 
 const ModalContent = ({ product }) => {
+  const contextLocation = useContext(LocationContext);
+  const [location, setLocation] = useState(false);
+  
+  useEffect(async () => {
+    const response = await contextLocation.locationData();
+    setLocation(response.data);
+    console.log(response.data)
+  }, []);
+  if (!location) return ("cargando")
   return (
     <div>
       <div className="flex flex-row items-center">
