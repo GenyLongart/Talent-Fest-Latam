@@ -17,13 +17,13 @@ export const Header = () => {
                     <div >
                         <span className='flex text-justify text-[23px] text-white font-bold font-Lato'> <AiOutlineMenu style={{display: 'inline', width: '30px', height: '35px', color: 'white'}} /> Menú </span>
                     </div>
-                    <div className="static flex w-[1024px]  px-4 flex-wrap items-center ">
-                        <input type="text" className="bg-white px-2 py-1 h-[46px] w-[1300px]border border-solid text-sm leading-snug text-[#6C7883] shadow-none outline-none focus:outline-none w-full font-normal rounded-full flex-1 border-l-0 placeholder-[#6C7883]" placeholder="Buscar en falabella.com" />
+                    <div className="static flex w-[300px]  px-4 flex-wrap items-center ">
+                        <input type="text" className="bg-white px-2 py-1 h-[46px] w-[300px]border border-solid text-sm leading-snug text-[#6C7883] shadow-none outline-none focus:outline-none w-full font-normal rounded-full flex-1 border-l-0 placeholder-[#6C7883]" placeholder="Buscar en falabella.com" />
                     </div>
                     <div className="flex flex-grow justify-end w-[100px]" id="example-navbar-warning w-56" >
                         <ul className="flex flex-collg:flex-row list-none items-center">
 
-                            <li className="flex flex-start nav-item h-[70px] w-[200px]">
+                            <li className="flex flex-start nav-item h-[70px] w-[150px]">
                                 <a className="flex flex-col font-bold leading-snug text-white hover:opacity-75">
                                     <span className="text-xl text-left pr-2 font-Lato">Hola,</span>
                                     <div className="flex flex-row">
