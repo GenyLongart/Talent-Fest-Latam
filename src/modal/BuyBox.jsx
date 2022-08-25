@@ -4,7 +4,7 @@ import { BiChevronDown} from "react-icons/bi";
 import BuyList from "./BuyList";
 
 
-export default function  BuyBox () {
+export default function  BuyBox ({product}) {
   return (
     <div>
     <div className=" w-full font-Latos grid">
@@ -28,7 +28,7 @@ export default function  BuyBox () {
         {/* </tr> */}
       </div>
       <div>
-        <BuyList />
+        <BuyList product={product}/>
       </div>
     </div>
     </div>
