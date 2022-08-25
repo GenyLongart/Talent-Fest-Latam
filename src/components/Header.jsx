@@ -1,7 +1,5 @@
 import React from 'react'
-
-
-import { AiOutlineShoppingCart } from "react-icons/ai";
+import { AiOutlineShoppingCart, AiOutlineDown, AiOutlineMenu, AiOutlineSearch, AiOutlineBorderLeft, AiTwotoneMobile} from "react-icons/ai";
 
 
 export const Header = () => {
@@ -9,31 +7,51 @@ export const Header = () => {
     return (
         <div>
             <nav className=" font-Lato w-screen static flex flex-wrap items-center pr-0 pl-0 py-0  mb-0">
-                <div className="w-full h-[70px] pr-2 pl-0 mx-auto flex flex-wrap items-center justify-right ml-0 bg-[#EE5601]">
+                <div className="w-screen h-[70px] pr-2 pl-0 mx-auto flex flex-wrap items-center justify-right ml-0 bg-[#EE5601]">
                     <div className=" static lg:w-auto  pr-6 pl-0 lg:static lg:block  ml-0">
                         <button className="bg-gradient-to-r from-[#FF6200] via-[#FF861B] to-[#FF861B]  text-white active:bg-amber-600 font-bold text-sm px-6 py-3 rounded-r-full shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 ml-0 self-start h-[70px]" type="button"
                         >
                             <img src="../src/img/falabella-logo.svg" alt="" />
                         </button>
                     </div>
-                    <div className="static flex w-full sm:w-7/12 md:w-5/12 px-4 flex-wrap items-center lg:ml-auto">
-                        <input type="text" className="bg-white px-2 py-1 h-8 border border-solid text-sm leading-snug text-[#6C7883] shadow-none outline-none focus:outline-none w-full font-normal rounded-full flex-1 border-l-0 placeholder-[#6C7883]" placeholder="Buscar en falabella.com" />
+                    <div >
+                        <span className='flex text-justify text-[23px] text-white font-bold font-Lato'> <AiOutlineMenu style={{display: 'inline', width: '30px', height: '35px', color: 'white'}} /> Menú </span>
                     </div>
-                    <div className="lg:flex flex-grow justify-end" id="example-navbar-warning w-56" >
+                    <div className="static flex w-[300px]  px-4 flex-wrap items-center ">
+                        <input type="text" className="bg-white px-2 py-1 h-[46px] w-[300px]border border-solid text-sm leading-snug text-[#6C7883] shadow-none outline-none focus:outline-none w-full font-normal rounded-full flex-1 border-l-0 placeholder-[#6C7883]" placeholder="Buscar en falabella.com" />
+                    </div>
+                    <div className="flex flex-grow justify-end w-[100px]" id="example-navbar-warning w-56" >
                         <ul className="flex flex-collg:flex-row list-none items-center">
-                            <li className="nav-item">
-                                <a className="flex items-center font-bold leading-snug text-white hover:opacity-75">
-                                    <span className="text-lg pr-2">Inicia sesión</span>
+
+                            <li className="flex flex-start nav-item h-[70px] w-[150px]">
+                                <a className="flex flex-col font-bold leading-snug text-white hover:opacity-75">
+                                    <span className="text-xl text-left pr-2 font-Lato">Hola,</span>
+                                    <div className="flex flex-row">
+                                        <span className="text-xl font-bold text-left pr-2 font-Lato ">Inicia sesión </span>
+                                        <AiOutlineDown/>
+                                    </div>
                                 </a>
                             </li>
-                            <li className="nav-item">
-                                <a className="flex items-center font-bold leading-snug text-white hover:opacity-75">
-                                    <span className="text-lg pl-2 ">Mis compras </span> <AiOutlineShoppingCart style={{display: 'inline', width: '50px', height: '37px'   }} />
+                            <p className='text-5xl text-white font-light'>|</p>
+                            <li className=" flex flex-start nav-item h-[70px] w-[100px]">
+                                <a className="flex flex-start flex-col font-bold leading-snug text-white hover:opacity-75">
+                                    
+                                    <div>
+                                        <span className="text-lg text-left pr-2 pl-0 font-Lato ">Mis</span>
+                                        <div>
+                                            <span className=" flex text-lg text-left pr-2 pl-0 font-Lato">compras </span>
+                                        </div>
+                                    </div>
+                                    
+                                    
                                 </a>
                             </li>
                         </ul>
-
                     </div>
+                    <div className='pr-4'>
+                        <AiOutlineShoppingCart style={{display: 'inline', width: '50px', height: '37px', color: 'white'}} />
+                    </div>
+                    
                 </div>
                 <div className='bg-white h-[50px] w-full flex items-center justify-between'>
                     <div>
